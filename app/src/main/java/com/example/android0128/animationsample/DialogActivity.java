@@ -18,13 +18,14 @@ public class DialogActivity extends Activity {
         setContentView(R.layout.activity_dialog);
 
         RelativeLayout relative_layout = (RelativeLayout) findViewById(R.id.relative_layout);
-        CardView card_view = (CardView) findViewById(R.id.card_view);
 
-        int screenWidth = getResources().getDisplayMetrics().widthPixels;
+//        @Code: reduce the sizi of the layout to match the imageView
+//        CardView card_view = (CardView) findViewById(R.id.card_view);
+//        int screenWidth = getResources().getDisplayMetrics().widthPixels;
+//        relative_layout.getLayoutParams().width = screenWidth/3;
+//        relative_layout.getLayoutParams().height = screenWidth/3;
+//        relative_layout.requestLayout();
 
-        relative_layout.getLayoutParams().width = screenWidth/3;
-        relative_layout.getLayoutParams().height = screenWidth/3;
-        relative_layout.requestLayout();
 
         ((View)findViewById(R.id.card_view).getParent()).setOnClickListener(new View.OnClickListener() {
             @Override
